@@ -20,23 +20,12 @@ const Navbar = () => {
     };
   }, []);
 
-  const scrollToFooter = () => {
-    const footerElement = document.getElementById('footer');
-
-    if (footerElement) {
+  const scrollToElement = (elementId: string) => {
+    const targetElement = document.getElementById(elementId);
+  
+    if (targetElement) {
       window.scrollTo({
-        top: footerElement.offsetTop,
-        behavior: 'smooth',
-      });
-    }
-  };
-
-  const scrollToMain = () => {
-    const footerElement = document.getElementById('main');
-
-    if (footerElement) {
-      window.scrollTo({
-        top: footerElement.offsetTop,
+        top: targetElement.offsetTop,
         behavior: 'smooth',
       });
     }
@@ -46,7 +35,7 @@ const Navbar = () => {
     ? 'w-full fixed top-0 bg-white shadow-md z-10'
     : 'w-full absolute z-10';
 
-  const buttonStyles = 'text-primary-black uppercase font-inter hover:text-stone-400'
+  const buttonStyles = 'text-primary-black uppercase font-inter hover:text-stone-400 duration-300 ease-in'
 
   return (
     <header className={navbarStyles}>
@@ -56,13 +45,14 @@ const Navbar = () => {
           title="Home"
           containerStyles={buttonStyles}
           buttonType="button"
-          handleClick={scrollToMain}
+          handleClick={() => scrollToElement('main')}
         />
 
         <CustomButton
           title="About"
           containerStyles={buttonStyles}
           buttonType="button"
+          handleClick={() => scrollToElement('AboutUs')}
         />
 
         <Link href="/" className="flex justify-center items-center">
@@ -73,13 +63,14 @@ const Navbar = () => {
           title="Menu"
           containerStyles={buttonStyles}
           buttonType="button"
+          handleClick={() => scrollToElement('discover')}
         />
 
         <CustomButton
           title="Contact"
           containerStyles={buttonStyles}
           buttonType="button"
-          handleClick={scrollToFooter}
+          handleClick={() => scrollToElement('footer')}
         />
       </nav>
     </header>

@@ -20,6 +20,17 @@ const Hero = () => {
     return () => clearInterval(intervalId); // Cleanup the interval on component unmount
   }, []);
 
+  const scrollToElement = (elementId: string) => {
+    const targetElement = document.getElementById(elementId);
+  
+    if (targetElement) {
+      window.scrollTo({
+        top: targetElement.offsetTop,
+        behavior: 'smooth',
+      });
+    }
+  };
+
   const images = ["/halfbeer1.png", "/halfbeer2.png", "/halfbeer3.png", "/halfbeer4.png"];
 
   return (
@@ -34,8 +45,8 @@ const Hero = () => {
 
         <CustomButton 
           title="View more"
-          containerStyles="border border-stone-400 text-stone-400 mt-10 px-3 font-size-10 hover:border-black hover:text-black z-10"
-          handleClick={handleScroll}
+          containerStyles="border border-stone-400 text-stone-400 mt-10 px-3 font-size-10 hover:border-black hover:text-black z-10 duration-300 ease-in"
+          handleClick={() => scrollToElement('AboutUs')}
         />
       </div>
 
