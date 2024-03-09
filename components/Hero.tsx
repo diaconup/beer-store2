@@ -15,7 +15,7 @@ const Hero = () => {
   useEffect(() => {
     const intervalId = setInterval(() => {
       setCurrentImage((prevImage) => (prevImage + 1) % 4);
-    }, 2000);
+    }, 3000);
 
     return () => clearInterval(intervalId); // Cleanup the interval on component unmount
   }, []);
@@ -23,8 +23,8 @@ const Hero = () => {
   const images = ["/halfbeer1.png", "/halfbeer2.png", "/halfbeer3.png", "/halfbeer4.png"];
 
   return (
-    <div className='hero bg-zinc-100 h-dvh relative'>
-      <div className='flex-1 pt-44 padding-x text-center bg-zinc-100 justify-center'>
+    <div className='hero bg-zinc-100 h-dvh relative' id='main'>
+      <div className='flex-1 pt-32 padding-x text-center bg-zinc-100 justify-center'>
         <p className='hero__subtitle '>
           Here is what we found out
         </p>
@@ -34,7 +34,7 @@ const Hero = () => {
 
         <CustomButton 
           title="View more"
-          containerStyles="border border-stone-400 text-stone-400 mt-10 px-3 font-size-10 hover:border-black hover:text-black"
+          containerStyles="border border-stone-400 text-stone-400 mt-10 px-3 font-size-10 hover:border-black hover:text-black z-10"
           handleClick={handleScroll}
         />
       </div>
