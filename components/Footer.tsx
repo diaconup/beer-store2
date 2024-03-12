@@ -26,22 +26,21 @@ const Footer = () => {
         <p className="text-xs font-inter mb-4 uppercase font-semibold text-orange-500 ">
           Subscribe to our newsletter.
         </p>
-        <div className="bg-opacity-75 bg-inherit border-2 border-white p-4 max-w-md w-full">
+        <div className="bg-opacity-40 bg-black border-2 border-white p-4 max-w-md w-full">
           <label
             className="block text-gray-300 text-sm font-bold mb-2"
             htmlFor="newsletter">
           </label>
-          <div className="flex items-center border rounded-md ">
+          <div className="flex items-center border rounded-md">
             <input
               type="email"
               id="newsletter"
               placeholder="Your email..."
-              className="w-full p-2 bg-inherit text-white border border-inherit"
+              className="w-full p-2 bg-inherit text-white border border-inherit outline-none"
             />
-
             <CustomButton
               title="Subscribe"
-              containerStyles="text-black w-40 font-inter uppercase font-bold text-sm italic hover:text-white"
+              containerStyles="text-orange-500 w-40 font-inter uppercase font-bold text-sm hover:text-white ease-in duration-300"
               buttonType="submit"
             />
           </div>
