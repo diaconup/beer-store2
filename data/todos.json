@@ -1,8 +1,12 @@
 {
   "beers": [
     {
-      "id": "1",
-      "text": "Carlsberg"
+      "id": "ea47a269-328a-4c77-bbf8-84086b20629b",
+      "text": "Kozel-2"
+    },
+    {
+      "id": "a6a3ded7-562c-42f8-b519-0a4b675e88c2",
+      "text": "Kozel"
     }
   ]
 }
