@@ -1,8 +1,14 @@
+import { getAllBeers } from '@/api';
 import AboutUs from '@/components/AboutUs';
+import AddBeer from '@/components/AddBeer';
 import Hero from '@/components/Hero';
 import SearchBar from '@/components/SearchBar';
+import ToDoList from '@/components/ToDoList';
 
-export default function Home() {
+export default async function Home() {
+  const beers = await getAllBeers();
+  console.log(beers);
+
   return (
     <main className="overflow-hidden">
       <Hero />
@@ -17,7 +23,11 @@ export default function Home() {
         <div className="home__filters">
           <SearchBar />
         </div>
+
+        <AddBeer />
+        <ToDoList beers={beers}/>
       </div>
+      
     </main>
   );
 }
