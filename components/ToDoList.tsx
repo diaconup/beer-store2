@@ -1,27 +1,31 @@
 'use client';
-
 import React, { useState } from 'react';
 import Beer from './Beer';
 import { IBeer } from '@/types/beers';
+import SearchBar from './SearchBar';
 
 interface ToDoListProps {
   beers: IBeer[];
 }
 
-const ITEMS_PER_PAGE = 10; // Number of items to display per page
+const ITEMS_PER_PAGE = 10;
 
 const ToDoList: React.FC<ToDoListProps> = ({ beers }) => {
   const [currentPage, setCurrentPage] = useState(1);
+  const [filteredManufacturer, setFilteredManufacturer] = useState('');
 
-  // Calculate total number of pages
-  const totalPages = Math.ceil(beers.length / ITEMS_PER_PAGE);
+  const handleSearch = (manufacturer: string) => {
+    setFilteredManufacturer(manufacturer); // Set the selected manufacturer
+  };
 
-  // Calculate index range for the current page
+  const filteredBeers = filteredManufacturer // Filter beers based on selected manufacturer
+    ? beers.filter((beer) => beer.text === filteredManufacturer)
+    : beers;
+
+  const totalPages = Math.ceil(filteredBeers.length / ITEMS_PER_PAGE);
   const startIndex = (currentPage - 1) * ITEMS_PER_PAGE;
   const endIndex = startIndex + ITEMS_PER_PAGE;
-
-  // Slice the beers array to get the beers for the current page
-  const currentBeers = beers.slice(startIndex, endIndex);
+  const currentBeers = filteredBeers.slice(startIndex, endIndex);
 
   const handlePrevPage = () => {
     setCurrentPage((prevPage) => Math.max(prevPage - 1, 1));
@@ -33,8 +37,8 @@ const ToDoList: React.FC<ToDoListProps> = ({ beers }) => {
 
   return (
     <div className="overflow-x-auto">
+      <SearchBar onSearch={handleSearch} />
       <table className="table w-full border-collapse border border-gray-400">
-        {/* head */}
         <thead className="bg-gray-200">
           <tr>
             <th className="px-4 py-2">Brand</th>
@@ -47,7 +51,6 @@ const ToDoList: React.FC<ToDoListProps> = ({ beers }) => {
           ))}
         </tbody>
       </table>
-      {/* Pagination controls */}
       <div className="flex justify-between mt-4">
         <button
           onClick={handlePrevPage}
