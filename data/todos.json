@@ -2,11 +2,55 @@
   "beers": [
     {
       "id": "ea47a269-328a-4c77-bbf8-84086b20629b",
-      "text": "Kozel-2"
+      "text": "Kozel-Brun"
     },
     {
       "id": "a6a3ded7-562c-42f8-b519-0a4b675e88c2",
       "text": "Kozel"
+    },
+    {
+      "id": "38766870-a226-46fa-bef6-d8eede182741",
+      "text": "B"
+    },
+    {
+      "id": "e52ccc71-55f7-485a-abcc-b225b4e3b2e5",
+      "text": "C"
+    },
+    {
+      "id": "3130d3e7-0a67-4998-8231-2de82a49fc8a",
+      "text": "D"
+    },
+    {
+      "id": "96fffef7-ae86-40ca-857d-d0aa2bab961e",
+      "text": "E"
+    },
+    {
+      "id": "b443c3bf-29d1-4d25-9076-cd34ca5a2a92",
+      "text": "F"
+    },
+    {
+      "id": "fedcd108-b394-40c0-9c9c-cf8170ab8fbb",
+      "text": "G"
+    },
+    {
+      "id": "dabaae80-e479-45a4-bb68-6b48af3b1e16",
+      "text": "H"
+    },
+    {
+      "id": "2bdb6de8-b3a9-4322-9c8e-0726694434e6",
+      "text": "I"
+    },
+    {
+      "id": "69e4d063-3542-4e07-9680-64fc65b4f560",
+      "text": "J"
+    },
+    {
+      "id": "dd2523cc-f1a8-46de-8263-01b768c773b2",
+      "text": "K"
+    },
+    {
+      "id": "0f031905-9b42-4a7b-8f87-aea6c6cef508",
+      "text": "L"
     }
   ]
 }
