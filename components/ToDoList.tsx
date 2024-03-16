@@ -49,11 +49,7 @@ const ToDoList: React.FC<ToDoListProps> = ({ beers }) => {
             <Beer beer={beer} />
             <p className="italic text-sm font-light">Beer flavour</p>
             <div className="relative w-full h-40 my-3 object-contain">
-              <img
-                src="/beer_transparent_01.png"
-                alt="beer model"
-                className="fill cover"
-              />
+              <img src="/type2.png" alt="beer model" className="fill cover" />
             </div>
           </div>
         ))}

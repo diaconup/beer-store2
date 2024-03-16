@@ -5,7 +5,7 @@ import { FormEventHandler, useState } from 'react';
 import { FiEdit, FiTrash2 } from 'react-icons/fi';
 import Modal from './Modal';
 import { useRouter } from 'next/navigation';
-import { deleteToDo, editToDo } from '@/public/api';
+import { deleteToDo, editToDo } from '@/api';
 
 interface BeerProps {
   beer: IBeer;
