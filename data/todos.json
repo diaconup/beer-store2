@@ -1,100 +1,44 @@
 {
   "beers": [
     {
-      "id": "ea47a269-328a-4c77-bbf8-84086b20629b",
-      "text": "Kozel-Brun"
-    },
-    {
-      "id": "a6a3ded7-562c-42f8-b519-0a4b675e88c2",
+      "id": "ed5b761c-17e6-4861-adc8-57c487b17fb9",
       "text": "Kozel"
     },
     {
-      "id": "38766870-a226-46fa-bef6-d8eede182741",
-      "text": "B"
+      "id": "d003eb09-f3a6-4f8b-8d68-3e13e54e3684",
+      "text": "Timisoreana"
     },
     {
-      "id": "e52ccc71-55f7-485a-abcc-b225b4e3b2e5",
-      "text": "C"
+      "id": "966c4e34-709f-44f7-a9de-56133bcc9b93",
+      "text": "Beck"
     },
     {
-      "id": "3130d3e7-0a67-4998-8231-2de82a49fc8a",
-      "text": "D"
+      "id": "fc976213-f528-4f2e-b3b8-2421f3385813",
+      "text": "Kozel"
     },
     {
-      "id": "96fffef7-ae86-40ca-857d-d0aa2bab961e",
-      "text": "E"
+      "id": "3840dc54-c5c2-4365-9d71-04c92f9151d9",
+      "text": "Kozel"
     },
     {
-      "id": "b443c3bf-29d1-4d25-9076-cd34ca5a2a92",
-      "text": "F"
+      "id": "2d93be29-1e42-42d7-838e-725ab199fb0b",
+      "text": "Ursus"
     },
     {
-      "id": "fedcd108-b394-40c0-9c9c-cf8170ab8fbb",
-      "text": "G"
+      "id": "8ffa5608-b299-44d8-a042-ac65bf4cd967",
+      "text": "Ursus"
     },
     {
-      "id": "dabaae80-e479-45a4-bb68-6b48af3b1e16",
-      "text": "H"
+      "id": "ac17dc81-6ad5-448f-9980-dea59181c436",
+      "text": "Ciuc"
     },
     {
-      "id": "2bdb6de8-b3a9-4322-9c8e-0726694434e6",
-      "text": "I"
+      "id": "f755a0f5-2609-4f2f-9e0d-26edc3bc3ce0",
+      "text": "Ciucas"
     },
     {
-      "id": "69e4d063-3542-4e07-9680-64fc65b4f560",
-      "text": "J"
-    },
-    {
-      "id": "dd2523cc-f1a8-46de-8263-01b768c773b2",
-      "text": "K"
-    },
-    {
-      "id": "0f031905-9b42-4a7b-8f87-aea6c6cef508",
-      "text": "L"
-    },
-    {
-      "id": "8a60e3e5-d2b0-415d-b0db-ffc522b05f79",
-      "text": "M"
-    },
-    {
-      "id": "550d5bc5-d4f4-4dcc-ad20-1478d0504781",
-      "text": "N"
-    },
-    {
-      "id": "cbfec3c2-af0a-4b07-ae7a-5d4a51b0f8ac",
-      "text": "1"
-    },
-    {
-      "id": "55f0b53a-4b58-4007-8718-0cf966cdc099",
-      "text": "2"
-    },
-    {
-      "id": "d8c11274-3762-4e90-bb2f-85495b69ede8",
-      "text": "3"
-    },
-    {
-      "id": "25e1a8c9-f252-465e-8742-e91a3bf09871",
-      "text": "4"
-    },
-    {
-      "id": "90c4acc1-4e4c-4585-8f03-343d0d6da7c2",
-      "text": "5"
-    },
-    {
-      "id": "bab15c55-a50a-4da3-afcc-51721c257a8b",
-      "text": "6"
-    },
-    {
-      "id": "825ee54d-75a2-49a8-aa39-99cb7cd6a30b",
-      "text": "7"
-    },
-    {
-      "id": "ef9e2087-bde0-41e3-adae-124ec48616b8",
-      "text": "8"
-    },
-    {
-      "id": "b626f49f-c38a-4e75-afdf-ccc77173d361",
-      "text": "Kozel2"
+      "id": "1ee2c2dd-328e-4a6b-8b55-c438d8d645db",
+      "text": "Stella Artois"
     }
   ]
 }

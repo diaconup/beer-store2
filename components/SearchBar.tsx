@@ -18,18 +18,33 @@ const SearchBar: React.FC<SearchBarProps> = ({ onSearch }) => {
 
   const handleReset = () => {
     setManufacturer('');
-    onSearch(''); // Pass an empty string to indicate showing all items
+    onSearch('');
   };
 
   return (
-    <form className="searchbar" onSubmit={handleSearch}>
-      <div className="searchbar__item">
+    <form
+      className="searchbar flex justify-between items-center"
+      onSubmit={handleSearch}
+    >
+      <div className="searchbar__item pt-6 pb-6">
         <SearchManufacturer onSearch={setManufacturer} />
       </div>
-      <button type="submit">Search</button>
-      <button type="button" onClick={handleReset}>
-        Reset
-      </button>
+      <div className="flex items-center">
+        <div className="flex-grow"></div> {/* This takes up remaining space */}
+        <button
+          type="submit"
+          className="bg-slate-400 hover:bg-slate-500 text-white font-bold py-2 px-4 rounded ease-in duration-300"
+        >
+          Search
+        </button>
+        <button
+          type="button"
+          onClick={handleReset}
+          className="ml-4 bg-slate-400 hover:bg-slate-500 text-white font-bold py-2 px-4 rounded ease-in duration-300"
+        >
+          Reset
+        </button>
+      </div>
     </form>
   );
 };

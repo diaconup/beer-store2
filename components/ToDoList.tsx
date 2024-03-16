@@ -8,7 +8,7 @@ interface ToDoListProps {
   beers: IBeer[];
 }
 
-const ITEMS_PER_PAGE = 10;
+const ITEMS_PER_PAGE = 9;
 
 const ToDoList: React.FC<ToDoListProps> = ({ beers }) => {
   const [currentPage, setCurrentPage] = useState(1);
@@ -36,29 +36,37 @@ const ToDoList: React.FC<ToDoListProps> = ({ beers }) => {
   };
 
   return (
-    <div className="overflow-x-auto">
+    <div className="overflow-x-auto ">
       <SearchBar onSearch={handleSearch} />
-      <table className="table w-full border-collapse border border-gray-400">
-        <thead className="bg-gray-200">
-          <tr>
-            <th className="px-4 py-2">Brand</th>
-            <th className="px-4 py-2">Action</th>
-          </tr>
-        </thead>
-        <tbody>
-          {currentBeers.map((beer) => (
-            <Beer key={beer.id} beer={beer} />
-          ))}
-        </tbody>
-      </table>
-      <div className="flex justify-between mt-4">
+      <div className="beer-card group flex flex-wrap">
+        {currentBeers.map((beer, index) => (
+          <div
+            key={beer.id}
+            className={`beer-card__content w-1/3 p-4 bg-zinc-50 pb-10 rounded-lg ${
+              index !== currentBeers.length ? 'mb-4 font-bold' : ''
+            }`}
+          >
+            <Beer beer={beer} />
+            <p className="italic text-sm font-light">Beer flavour</p>
+            <div className="relative w-full h-40 my-3 object-contain">
+              <img
+                src="/beer_transparent_01.png"
+                alt="beer model"
+                className="fill cover"
+              />
+            </div>
+          </div>
+        ))}
+      </div>
+
+      <div className="flex justify-between mt-10">
         <button
           onClick={handlePrevPage}
           disabled={currentPage === 1}
-          className={`px-3 py-1 rounded ${
+          className={`px-5 py-1 rounded ${
             currentPage === 1
               ? 'bg-gray-300 cursor-not-allowed'
-              : 'bg-blue-500 hover:bg-blue-600 text-white'
+              : 'bg-orange-400 hover:bg-orange-500 ease-in duration-300 text-white'
           }`}
         >
           Prev
@@ -67,10 +75,10 @@ const ToDoList: React.FC<ToDoListProps> = ({ beers }) => {
         <button
           onClick={handleNextPage}
           disabled={currentPage === totalPages}
-          className={`px-3 py-1 rounded ${
+          className={`px-5 py-1 rounded ${
             currentPage === totalPages
               ? 'bg-gray-300 cursor-not-allowed'
-              : 'bg-blue-500 hover:bg-blue-600 text-white'
+              : 'bg-orange-400 hover:bg-orange-500 ease-in duration-300 text-white'
           }`}
         >
           Next
