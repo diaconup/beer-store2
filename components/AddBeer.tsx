@@ -4,7 +4,7 @@ import React, { FormEventHandler, useState } from 'react';
 import CustomButton from './CustomButton';
 import { AiOutlinePlus } from 'react-icons/ai';
 import Modal from './Modal';
-import { addToDo } from '@/api';
+import { addToDo } from '@/public/api';
 import { useRouter } from 'next/navigation';
 import { uuid } from 'uuidv4';
 

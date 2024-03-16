@@ -1,4 +1,4 @@
-import { IBeer } from './types/beers';
+import { IBeer } from '../types/beers';
 
 const baseUrl = 'http://localhost:3001';
 

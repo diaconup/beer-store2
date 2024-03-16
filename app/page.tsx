@@ -1,4 +1,4 @@
-import { getAllBeers } from '@/api';
+import { getAllBeers } from '@/public/api';
 import AboutUs from '@/components/AboutUs';
 import AddBeer from '@/components/AddBeer';
 import Hero from '@/components/Hero';
