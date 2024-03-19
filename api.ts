@@ -1,5 +1,7 @@
 import { IBeer } from './types/beers';
 
+const baseUrl = 'http://localhost:3001';
+
 export const getAllBeers = async (): Promise<IBeer[]> => {
   const res = await fetch(`${baseUrl}/beers`, { cache: 'no-store' });
   const todos = await res.json();
