@@ -2,15 +2,11 @@
   "beers": [
     {
       "id": "ed5b761c-17e6-4861-adc8-57c487b17fb9",
-      "text": "Kozel"
+      "text": "Guiness"
     },
     {
       "id": "d003eb09-f3a6-4f8b-8d68-3e13e54e3684",
       "text": "Timisoreana"
-    },
-    {
-      "id": "966c4e34-709f-44f7-a9de-56133bcc9b93",
-      "text": "Beck"
     },
     {
       "id": "fc976213-f528-4f2e-b3b8-2421f3385813",
@@ -39,6 +35,10 @@
     {
       "id": "1ee2c2dd-328e-4a6b-8b55-c438d8d645db",
       "text": "Stella Artois"
+    },
+    {
+      "id": "154960f1-f089-4c80-801e-9d996557078a",
+      "text": "Neumarkt"
     }
   ]
 }
