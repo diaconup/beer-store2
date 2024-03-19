@@ -1,6 +1,16 @@
 
-## Deploy on Vercel
+## Beer Store
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+Run it : npm run dev
+         npm run json-server
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+A modern CRUD application that utilizes all of the latest and greatest of what
+Next 14 has to offer, leveraging features such as server-side rendering and the app router.
+
+Tech stack : React, NextJS , Tailwind CSS
+
+
+
+![Screenshot_2](https://github.com/diaconup/beer-store2/assets/152711917/3acd888b-cad6-4f89-bee6-0fabde56e9ec)
+![Screenshot_1](https://github.com/diaconup/beer-store2/assets/152711917/b07e3027-7324-4c34-85c8-5eb678cd8a66)
+![Screenshot_3](https://github.com/diaconup/beer-store2/assets/152711917/b8d53514-48eb-4b07-88ca-38e2422d2727)
