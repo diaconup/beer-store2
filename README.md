@@ -1,8 +1,9 @@
 
 ## Beer Store
 
-Run it : npm run dev
-         npm run json-server
+Run it : <br>
+-- npm run dev <br>
+-- npm run json-server
 
 A modern CRUD application that utilizes all of the latest and greatest of what
 Next 14 has to offer, leveraging features such as server-side rendering and the app router.
